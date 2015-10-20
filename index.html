@@ -61,18 +61,7 @@
     version    : 'v2.2' // use version 2.2
   });
 
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
-  //
-  // 1. Logged into your app ('connected')
-  // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  //
-  // These three cases are handled in the callback function.
-
+  
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
@@ -198,26 +187,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Selecting country name -->
-    <!-- <div id="check">
-    <section id="country" class="container content-section text-center" style="color:black">
-    <script>
-    $('#web1').append('<a href="http://'api.rwlabs.org/v1/countries'" rel="external" data-direction="reverse">'http:api.rwlabs.org/v1/countries'</a>');
-    </script>
-    
-        <h1>Pulling JSON data from an open data API</h1>
-        Choose: 
-        <select>
-            <option>227 Tajikistan</option>
-            <option>234 Trinidad and Tobago</option>
-            <option>225 Switzerland</option>
-            <option>228 Thailand</option>
-        </select> 
-            <em>(ZIP City Country)</em> 
-            <button id="web1">Let's do this thing!</button>
-    </section>
-    </div> -->
        
     <section id="contact" class="container content-section text-center">
         <div class="row">    
@@ -226,7 +195,7 @@
                     <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/TwinkleChawla" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    <a href="https://github.com/rakhisharma" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                 </li>
                 <li>
                     <a href="https://plus.google.com" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
@@ -243,9 +212,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    /*<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->*/
 
     <!-- Custom Theme JavaScript -->
     <script src="js/CA.js"></script>
